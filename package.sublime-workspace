@@ -1,0 +1,403 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"profile"
+			],
+			[
+				"ct",
+				"controller"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"insta",
+				"instagram"
+			],
+			[
+				"face",
+				"facebook"
+			],
+			[
+				"h",
+				"h6\tTag"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"align",
+				"vertical-align"
+			],
+			[
+				"alin",
+				"align-content"
+			],
+			[
+				"tr",
+				"textarea\tTag"
+			],
+			[
+				"B",
+				"Brown"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"b",
+				"button\tTag"
+			],
+			[
+				"t",
+				"td\tTag"
+			],
+			[
+				"all",
+				"allbooks"
+			],
+			[
+				"$",
+				"$routeProvider"
+			],
+			[
+				"n",
+				"ng-view"
+			],
+			[
+				"lo",
+				"login"
+			],
+			[
+				"login",
+				"login-controller"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 980.0,
+		"last_filter": "i",
+		"selected_items":
+		[
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 980.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/common/services/authentication.service.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/common/directives/navigation/navigation.template.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/common/directives/navigation/navigation.directive.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/main.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/home/home.view.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/auth/login/login.controller.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/home/home.controller.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/common/services/data.service.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/profile/profile.view.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/profile/profile.controller.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/rooms/rooms.controller.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/auth/login/login.view.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/index.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/controllers/authentication.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/routes/index.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/reference/hotel-booking-mean-stack/server.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/reference/hotel-booking-mean-stack/.nodemonignore",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/reference/hotel-booking-mean-stack/bin/www-prod",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/reference/hotel-booking-mean-stack/bin/www",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/reference/hotel-booking-mean-stack/server/config/config.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/controllers/rooms.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/routes/index.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/routes/users.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/controllers/profile.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/auth/register/register.controller.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/auth/register/register.view.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/rooms/rooms.view.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelReservationSystem/app_api/models/users.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/common/directives/navigation/navigation.controller.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/config/passport.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/models/db.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelReservationSystem/app_api/models/db.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/views/error.jade",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/models/rooms.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_api/models/users.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/app.min.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/app_client/rooms/rooms.controller",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/package.json",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/Project/HotelManagementSystem/views/index.jade",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/ASSIGNMENT/Assignment3/babynames.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/ASSIGNMENT/Assignment3/babynames.php",
+		"/C/Users/shrut/Desktop/vkj150030-HW5-20170411T035145Z-001/vkj150030-HW5/blog/app/assets/stylesheets/application.css",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/ASSIGNMENT/Assignment3/babynames.sql",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/PRACTICE WORK/PW3/welcome.php",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/PRACTICE WORK/PW3/login.php",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/PRACTICE WORK/PW3/login.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/ASSIGNMENT/Assignment 2/validate.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/PRACTICE WORK/sns150630-pw2/Javascript.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/REFERENCES/PW3-kap140330-20170206T153504Z/PW3-kap140330/Javascript.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/REFERENCES/PW2-20170204T232611Z/PW2/css/validate.css",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/REFERENCES/PW2-20170204T232611Z/PW2/js/validate.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/ASSIGNMENT/index.css",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/ASSIGNMENT/index.html",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/REFERENCES/PW2-20170204T232611Z/PW2/kxp153130_Khushbu Patil/validate.js",
+		"/C/Users/shrut/Desktop/Forum_2/forum/controller.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/ASSIGNMENT/index",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/REFERENCES/Ass 1-20170128T195651Z/Ass 1/index.css",
+		"/C/Users/shrut/Desktop/LMS/content/controller.js",
+		"/C/Users/shrut/Desktop/LMS/routes.js",
+		"/C/Users/shrut/Desktop/Spring 2017/WPL/PRACTICE WORK/form.html",
+		"/C/Users/shrut/Dropbox/WPL (1)/Practice Work/PW2/Javascript.js",
+		"/C/Users/shrut/Dropbox/WPL (1)/Practice Session/Practice Session/Ass 2/js/validate.css",
+		"/C/Users/shrut/Desktop/LMS/content/content.html",
+		"/C/Users/shrut/Desktop/LMS/main.html",
+		"/C/Users/shrut/Desktop/LMS/login/controller.js",
+		"/C/Users/shrut/Desktop/SDN Project/Python Files/Load Balancers/sf_lb_r.py",
+		"/C/Users/shrut/Desktop/SDN Project/Python Files/Load Balancers/sf_lb_wrr.py",
+		"/C/Users/shrut/Desktop/SDN Project/Python Files/Load Balancers/sl_lb_r.py",
+		"/C/Users/shrut/Desktop/SDN Project/Python Files/Load Balancers/sl_lb_wrr.py",
+		"/C/Users/shrut/Desktop/code-Fault-Tolerance/FaultHandler/faultpox/FaultFiles/faulter.py",
+		"/C/Users/shrut/Desktop/Forum_2/forum/reply.html",
+		"/C/Users/shrut/Desktop/Forum_2/forum/newpost.html",
+		"/C/Users/shrut/Desktop/Forum_2/forum/index1.html",
+		"/C/Users/shrut/Desktop/login/src/home/home.js",
+		"/C/Users/shrut/Desktop/Forum_2/forum/data.json",
+		"/C/Users/shrut/Desktop/Forum_2/forum/styling.css",
+		"/C/Users/shrut/Desktop/Forum_2/forum/forum.html",
+		"/C/Users/shrut/Desktop/Forum_2/forum/index.html",
+		"/C/Users/shrut/Desktop/Forum_2/index.html",
+		"/C/Users/shrut/Desktop/Forum/app.js",
+		"/C/Users/shrut/Desktop/Forum/home/home.html",
+		"/C/Users/shrut/Desktop/Forum/forum/forum.html",
+		"/C/Users/shrut/Desktop/Forum/index.html",
+		"/C/Users/shrut/Desktop/login/modules/authentication/views/login.html",
+		"/C/Users/shrut/Desktop/LMS/login/login.html",
+		"/C/node_modules/phonegap/node_modules/cordova/node_modules/cordova-lib/node_modules/npm/node_modules/mkdirp/bin/cmd.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/services/merchantFactory.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/services/favoriteService.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/services/favoriteApi.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/services/merchantApi.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/package.json",
+		"/C/Users/shrut/Desktop/GetPunch/test1/bower.json",
+		"/C/Users/shrut/Downloads/angularfire.min.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/favorite/tab-favorite.html",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/favorite/favorite-ctrl.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/app.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/login/login-ctrl.js",
+		"/C/Users/shrut/Desktop/GetPunch/test1/www/app/login/login.html",
+		"/C/Users/shrut/Desktop/LMS/content/styling.css",
+		"/C/Users/shrut/Desktop/LMS/content/allbooks.html",
+		"/C/Users/shrut/Desktop/LMS/content/acnt.html",
+		"/C/Users/shrut/Desktop/LMS/content/index.html",
+		"/C/Users/shrut/Desktop/LMS/content/kids.html",
+		"/C/Users/shrut/Desktop/LMS/content/fiction.html",
+		"/C/Users/shrut/Desktop/LMS/content/scifi.html",
+		"/C/Users/shrut/Desktop/LMS/content/autobio.html",
+		"/C/Users/shrut/Desktop/LMS/content/data/autobio.json",
+		"/C/Users/shrut/Desktop/LMS/content/data/allbooks.json",
+		"/C/Users/shrut/Desktop/LMS/content/data/fiction.json",
+		"/C/Users/shrut/Desktop/LMS/content/data/kids.json",
+		"/C/Users/shrut/Desktop/LMS/content/data/scifi.json",
+		"/C/Users/shrut/Desktop/LMS/content/allbooks.json",
+		"/C/Users/shrut/Desktop/LMS/content/login.html",
+		"/C/Users/shrut/Desktop/LMS/login.html",
+		"/C/Users/shrut/Desktop/LMS/content/ficiton.html",
+		"/C/Users/shrut/Desktop/LMS/content/scifi.hrml",
+		"/C/Users/shrut/Desktop/login app/scripts/app.js",
+		"/C/Users/shrut/Desktop/LMS/trial.html",
+		"/C/Users/shrut/Desktop/trial.html",
+		"/C/Users/shrut/AppData/Roaming/Sublime Text 3/Packages/User/Tag Package.sublime-settings",
+		"/C/Users/shrut/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/shrut/Desktop/LMS/content.html",
+		"/C/Users/shrut/Desktop/LMS/controller.js",
+		"/C/Users/shrut/Desktop/LMS/login",
+		"/C/Users/shrut/Desktop/startbootstrap-creative-1.0.4/index.html",
+		"/C/Users/shrut/Desktop/LMS/src/grandfather.js",
+		"/C/Users/shrut/Desktop/LMS/Gruntfile.js"
+	],
+	"find":
+	{
+		"height": 58.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Console",
+			"alert",
+			"newreply",
+			"Home",
+			"firebase",
+			"User",
+			"page-top"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 58.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 112.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 838.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

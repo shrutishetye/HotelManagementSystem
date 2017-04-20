@@ -8,10 +8,12 @@
   function authentication ($http, $window) {
 
     var saveToken = function (token) {
+      console.log("getting token...");
       $window.localStorage['mean-token'] = token;
     };
 
     var getToken = function () {
+      console.log("getting token...");
       return $window.localStorage['mean-token'];
     };
 

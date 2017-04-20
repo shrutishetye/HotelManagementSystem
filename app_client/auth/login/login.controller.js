@@ -14,12 +14,11 @@
     };
 
     vm.onSubmit = function () {
-      authentication
-        .login(vm.credentials)
+      authentication.login(vm.credentials)
         .error(function(err){
-          alert(err);
-        })
-        .then(function(){
+          console.log(err);
+        }).then(function(){
+          console.log('login sucessfull')
           $location.path('profile');
         });
     };

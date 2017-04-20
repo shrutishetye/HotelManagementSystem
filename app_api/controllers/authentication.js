@@ -15,7 +15,7 @@ module.exports.register = function(req, res) {
   //   });
   //   return;
   // }
-
+  console.log("in authentication js...regitering new user", req);
   var user = new User();
 
   user.name = req.body.name;
@@ -24,6 +24,7 @@ module.exports.register = function(req, res) {
   user.setPassword(req.body.password);
 
   user.save(function(err) {
+    console.log('err', err);
     var token;
     token = user.generateJwt();
     res.status(200);
@@ -42,8 +43,12 @@ module.exports.login = function(req, res) {
   //   });
   //   return;
   // }
-
+  console.log("logging in...");
   passport.authenticate('local', function(err, user, info){
+    console.log('err', err);
+    console.log('user', user);
+    console.log('info', info);
+
     var token;
 
     // If Passport throws/catches an error

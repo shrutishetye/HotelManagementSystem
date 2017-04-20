@@ -24,6 +24,11 @@
         controller: 'profileCtrl',
         controllerAs: 'vm'
       })
+      .when('/rooms', {
+        templateUrl: '/rooms/rooms.view.html',
+        controller: 'roomsCtrl',
+        controllerAs: 'vm'
+      })
       .otherwise({redirectTo: '/'});
 
     // use the HTML5 History API
@@ -33,6 +38,9 @@
   function run($rootScope, $location, authentication) {
     $rootScope.$on('$routeChangeStart', function(event, nextRoute, currentRoute) {
       if ($location.path() === '/profile' && !authentication.isLoggedIn()) {
+        $location.path('/');
+      }
+      if ($location.path() === '/rooms' && !authentication.isLoggedIn()) {
         $location.path('/');
       }
     });
