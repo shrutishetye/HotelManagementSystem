@@ -10,8 +10,8 @@ module.exports.all = function(req, res) {
   } else {
     Room
       .find()
-      .exec(function(err, user) {
-        res.status(200).json(user);
+      .exec(function(err, rooms) {
+        res.status(200).json(rooms);
       });
   }
 

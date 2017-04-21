@@ -1,13 +1,27 @@
-
+<navigation></navigation>
 <div class="container">
 
-  <div class="row">
-    
-    <div class="col-md-6">
+	<div class="row">
 
-     {{ vm }}
-     
-    </div>
-  </div>
+			<h2>Rooms Availability</h2>
+
+			<p class='pull-right'>Search:  <input type='text' ng-model='filter_name' placeholder='search name...' /></p>
+			<table class='table table-striped'>
+				<tr>
+					<th>Name</th>
+					<th>Type</th>
+					<th>Guests Allowed</th>
+					<th>No of Beds</th>
+					<th>Booked</th>
+				</tr>
+				<tr ng-repeat='room in vm.rooms | orderBy: room.name'>
+					<td ng-bind='room.name'></td>
+					<td ng-bind='room.type'></td>
+					<td ng-bind='room.guests'></td>
+					<td ng-bind='room.beds'></td>
+					<td ng-bind='room.booked'></td>
+				</tr>
+			</table>
+	</div>
 
 </div>

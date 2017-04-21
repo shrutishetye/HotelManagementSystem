@@ -7,10 +7,9 @@
     roomsCtrl.$inject = ['$http', 'authentication'];
   function roomsCtrl($http, authentication) {
     console.log("rooms controller is running...");
-    var vm = this;
-
-    vm.rooms = {};
-
+    var vm = this
+    vm.rooms = []
+    
     $http.get('/api/rooms', {
         headers: {
           Authorization: 'Bearer '+ authentication.getToken()
@@ -26,3 +25,7 @@
   }
     
 })();
+
+
+
+
