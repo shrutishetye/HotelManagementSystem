@@ -15,7 +15,7 @@ module.exports.register = function(req, res) {
   //   });
   //   return;
   // }
-  console.log("in authentication js...regitering new user", req);
+  console.log("in authentication js...registering new user", req);
   var user = new User();
 
   user.name = req.body.name;
@@ -27,11 +27,20 @@ module.exports.register = function(req, res) {
     console.log('err', err);
     var token;
     token = user.generateJwt();
-    res.status(200);
-    res.json({
-      "token" : token
-    });
+    if(!err){ 
+      res.status(200);
+      res.json({
+        "token" : token
+      });
+    } else {
+      res.status(400)
+      res.json({
+        "msg" : 'user already exists'
+      });
+    }
+
   });
+
 
 };
 
@@ -45,10 +54,6 @@ module.exports.login = function(req, res) {
   // }
   console.log("logging in...");
   passport.authenticate('local', function(err, user, info){
-    console.log('err', err);
-    console.log('user', user);
-    console.log('info', info);
-
     var token;
 
     // If Passport throws/catches an error

@@ -1,0 +1,30 @@
+<div class="container">
+
+	<div class="row">
+
+		<h2>Admin Portal</h2> 
+
+		<p class='pull-right'><button ng-click="vm.goToAdd()">Add new units</button></p>
+		<table class='table table-striped'>
+			<tr>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Guests Allowed</th>
+				<th>No of Beds</th>
+				<th>Booked</th>
+				<th>Add to Favourites</th>
+				<th>Make a booking</th>
+			</tr>
+			<tr ng-repeat='room in vm.rooms'>
+				<td ng-bind='room.name'></td>
+				<td ng-bind='room.type'></td>
+				<td ng-bind='room.guests'></td>
+				<td ng-bind='room.beds'></td>
+				<td ng-bind='room.booked'></td>
+				<td><button ng-click="vm.delete(room)">Delete</button></td>
+				<td><button ng-click="vm.store(room)">Edit</button></td>
+			</tr>
+		</table>
+	</div>
+
+</div>

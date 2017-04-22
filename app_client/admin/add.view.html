@@ -1,0 +1,34 @@
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Add a new room</h1>
+      <form ng-submit="vm.onSubmit()">
+        <div class="form-group">
+          <label for="name">Unit Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter name of unit" ng-model="vm.room.name">
+        </div>
+        <div class="form-group">
+          <label for="type">Type of Room</label>
+          <input type="text" class="form-control" id="type" placeholder="Enter Type" ng-model="vm.room.type">
+        </div>
+        <div class="form-group">
+        <label for="booked">Booked</label>
+          <input type="text" class="form-control" id="booked" placeholder="Enter Yes/No" ng-model="vm.room.booked">
+        </div>
+        <div class="form-group">
+          <label for="beds">No of beds</label>
+          <input type="text" class="form-control" id="beds" placeholder="Enter number" ng-model="vm.room.beds">
+        </div>
+        <div class="form-group">
+          <label for="type">Guests Allowed</label>
+          <input type="text" class="form-control" id="guests" placeholder="Enter guests Allowed" ng-model="vm.room.guests">
+        </div>
+
+        <button type="submit" class="btn btn-default">Add</button>
+      </form>
+    </div>
+  </div>
+
+</div>
