@@ -18,7 +18,6 @@
 				<th hidden>Booked</th>
 				<th>Cost</th>
 				<th>City</th>
-				<th>Add to Favourites</th>
 				<th>Make a booking</th>
 
 			</tr>
@@ -31,7 +30,6 @@
 				<td ng-bind='room.booked' hidden></td>
 				<td ng-bind='room.cost'></td>
 				<td ng-bind='room.city'></td>
-				<td><button>Favs</button></td>
 				<td><button ng-click="vm.book(room)">Book</button></td>
 			</tr>
 		</table>

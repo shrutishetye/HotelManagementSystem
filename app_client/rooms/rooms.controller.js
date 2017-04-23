@@ -24,11 +24,20 @@ function roomsCtrl($http, authentication, $location) {
       cost: room.cost,
       city: room.city
     }
+    var cUser = JSON.parse(sessionStorage.user);
     $http.post('/api/admin/rooms/update', vm.room).success(function(data) {
-      alert("booked successfully");
-      window.location.reload(true);
+      var broom = {email: cUser.email, room: vm.room.name}
+      $http.post('/api/addbooking', broom).success(function(d) {
+        alert("Payment successfull. Booking ID: 78926AS56");
+        $location.path('profile');
+      })
+      .error(function (e) {
+        console.log('error..', e);
+      })
     })
     .error(function (e) {
+      alert("Error occured please contact Customer Service !!");
+      window.location.reload(true);
       console.log('error..', e);
     });
   }

@@ -9,12 +9,15 @@ var auth = jwt({
 var ctrlProfile = require('../controllers/profile');
 var ctrlAuth = require('../controllers/authentication');
 var ctrlRooms = require('../controllers/rooms');
+var ctrlBookings = require('../controllers/booking');
 
 // profile
 router.get('/profile', auth, ctrlProfile.profileRead);
 
-//rooms
+//user and bookings
 router.get('/availability', auth, ctrlRooms.available);
+router.post('/bookings', ctrlBookings.bookings);
+router.post('/addbooking', ctrlBookings.addbooking);
 
 // admin
 router.get('/rooms', auth, ctrlRooms.all);
