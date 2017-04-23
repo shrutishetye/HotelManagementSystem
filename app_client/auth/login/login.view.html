@@ -15,11 +15,11 @@
       <form id="loginform" ng-submit="loginform.$valid && vm.onSubmit()" name="loginform">
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" required placeholder="Enter email" ng-model="vm.credentials.email" name="email">
+          <input type="email" class="form-control" id="email" required noValidate placeholder="Enter email" ng-model="vm.credentials.email" name="email">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" required placeholder="Password" ng-model="vm.credentials.password" name="password">
+          <input type="password" class="form-control" id="password" noValidate required placeholder="Password" ng-model="vm.credentials.password" name="password">
         </div>
         <button type="submit" class="btn btn-default">Sign in!</button>
       </form>
@@ -29,3 +29,13 @@
 
 </div>
 
+<style>
+
+body {
+    background:#edf1f4 url('img/lgbg.jpg');
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+    font-size:16px;
+    color:#444;
+}
+
+</style>

@@ -9,10 +9,10 @@ module.exports.profileRead = function(req, res) {
     });
   } else {
     User
-      .findById(req.payload._id)
-      .exec(function(err, user) {
-        res.status(200).json(user);
-      });
+    .findById(req.payload._id)
+    .exec(function(err, user) {
+      res.status(200).json(user);
+    });
   }
 
 };
