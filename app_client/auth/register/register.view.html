@@ -8,22 +8,22 @@
     <div class="col-md-6">
       <h1>Register</h1>
       <p class="lead">Already a member? Please <a href="login">log in</a> instead.</p>
-      <form id="registerform" action="vm.onSubmit()" novalidate="novalidate" name="registerform">
+      <form id="registerform" ng-submit="registerform.$valid && vm.onSubmit()" novalidate="novalidate" name="registerform">
         <div class="form-group">
           <label for="name">Full name</label>
-          <span><input type="text" class="form-control" id="name" placeholder="Enter your name" ng-model="vm.credentials.name" name="name"></span>
+          <span><input type="text" class="form-control" required id="name" placeholder="Enter your name" ng-model="vm.credentials.name" name="name"></span>
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <span><input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="vm.credentials.email" name="email">
+          <span><input type="email" class="form-control" required id="email" placeholder="Enter email" ng-model="vm.credentials.email" name="email">
           </span>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <span><input type="password" class="form-control" id="password" placeholder="Password" ng-model="vm.credentials.password" name="password">
+          <span><input type="password" class="form-control" id="password" required placeholder="Password" ng-model="vm.credentials.password" name="password">
           </span>
         </div>
-        <button type="submit" class="btn btn-default" name="submit" id="submit">Register!</button>
+        <button type="submit" class="btn btn-default" name="submit" required  ng-disabled="loginform.$invalid" id="submit">Register!</button>
       </form>
     </div>
   </div>

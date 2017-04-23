@@ -11,99 +11,98 @@
 
   <script src="lib/angular/angular.min.js"></script>
   <script src="lib/angular/angular-route.min.js"></script>
-
-   <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
   <script>
-  $(document).ready(function(){
-    $('input[type=password]').keyup(function() {
-      var password= $(this).val();
+    $(document).ready(function(){
+      $('input[type=password]').keyup(function() {
+        var password= $(this).val();
 
-      if(password.length<8){
-        $('#length').removeClass('valid').addClass('invalid');
-      } else{
+        if(password.length<8){
+          $('#length').removeClass('valid').addClass('invalid');
+        } else{
           $('#length').removeClass('invalid').addClass('valid');
-      }
+        }
 
       //validate letter
-          if ( password.match(/[A-z]/) ) {
-              $('#letter').removeClass('invalid').addClass('valid');
-          } else {
-              $('#letter').removeClass('valid').addClass('invalid');
-          }
+      if ( password.match(/[A-z]/) ) {
+        $('#letter').removeClass('invalid').addClass('valid');
+      } else {
+        $('#letter').removeClass('valid').addClass('invalid');
+      }
 
           //validate capital letter
           if ( password.match(/[A-Z]/) ) {
-              $('#capital').removeClass('invalid').addClass('valid');
+            $('#capital').removeClass('invalid').addClass('valid');
           } else {
-              $('#capital').removeClass('valid').addClass('invalid');
+            $('#capital').removeClass('valid').addClass('invalid');
           }
 
           //validate number
           if ( password.match(/\d/) ) {
-              $('#number').removeClass('invalid').addClass('valid');
+            $('#number').removeClass('invalid').addClass('valid');
           } else {
-              $('#number').removeClass('valid').addClass('invalid');
+            $('#number').removeClass('valid').addClass('invalid');
           }
 
-    }).focus(function() {
-      $('#password_info').show();
-    }).blur(function() {
-      $('#password_info').hide();
-    });
+        }).focus(function() {
+          $('#password_info').show();
+        }).blur(function() {
+          $('#password_info').hide();
+        });
 
 
-    $("form[name='registerform']").validate({
-    rules:{
-      name:{
-      	required:true
-      },
+        $("form[name='registerform']").validate({
+          rules:{
+            name:{
+             required:true
+           },
 
-      email:{
-        required:true,
-        email:true
-      },
+           email:{
+            required:true,
+            email:true
+          },
 
-      password:{
-        required:true
-      }
-    },
+          password:{
+            required:true
+          }
+        },
 
-    messages:{
-    	email:"Please enter emailid",
-    	password:"Please enter password"
-    },
+        messages:{
+         email:"Please enter your email",
+         password:"Please enter your password"
+       },
 
-    
-    });
-  });
-  </script>
 
-  <script>
-$(document).ready(function()) {
-  
-  $("form[name='loginform']").validate({
-    rules:{
-      email:{
-        required:true,
-        email:true
-      },
+     });
+      });
+    </script>
 
-      password:{
-        required:true
-      }
-    },
+    <script>
+      $(document).ready(function() {
 
-    messages:{
-      email: "Please enter emailid"
-      password:"Please enter password"
-    }
-  });
-});
-</script>
+        $("form[name='loginform']").validate({
+          rules:{
+            email:{
+              required:true,
+              email:true
+            },
 
-  <script src="app.min.js"></script>
+            password:{
+              required:true
+            }
+          },
 
-</body>
-</html>
+          messages:{
+            email: "Please enter your email",
+            password:"Please enter your password"
+          }
+        });
+      });
+    </script>
+
+    <script src="app.min.js"></script>
+
+  </body>
+  </html>
