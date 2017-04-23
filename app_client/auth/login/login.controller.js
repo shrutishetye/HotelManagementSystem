@@ -15,12 +15,17 @@
 
     vm.onSubmit = function () {
       authentication.login(vm.credentials)
-        .error(function(err){
-          console.log(err);
-        }).then(function(){
-          console.log('login sucessfull')
-          $location.path('profile');
-        });
+      .error(function(err){
+        console.log(err);
+      }).then(function(){
+        console.log('login sucessfull')
+        var cUser = authentication.currentUser()
+        if(cUser.email == 'admin@staytoday.com'){
+          $location.path('roomlist');
+        }else{
+          $location.path('rooms');
+        }
+      });
     };
 
   }

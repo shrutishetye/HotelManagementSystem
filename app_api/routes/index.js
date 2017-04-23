@@ -16,7 +16,7 @@ router.get('/profile', auth, ctrlProfile.profileRead);
 // rooms
 router.get('/rooms', auth, ctrlRooms.all);
 router.post('/admin/rooms/add', ctrlRooms.add);
-router.get('/admin/rooms/edit', auth, ctrlRooms.update);
+router.post('/admin/rooms/update', ctrlRooms.update);
 router.post('/admin/rooms/delete', ctrlRooms.delete);
 
 // authentication

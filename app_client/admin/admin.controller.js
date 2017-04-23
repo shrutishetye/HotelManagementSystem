@@ -23,7 +23,8 @@ app.controller('roomlistCtrl',['$http', 'authentication', '$location', function(
 
   vm.store = function(room){
     console.log(room)
-   // $cookies.put('room', room);
+    sessionStorage['room'] = JSON.stringify(room)
+     $location.path('update');
   }
 
   vm.delete = function(r){
@@ -53,6 +54,31 @@ app.controller('addRoomCtrl',['$http', 'authentication', '$location', function($
   vm.onSubmit = function () {
     console.log('Submitting new form');
     $http.post('/api/admin/rooms/add', vm.room).success(function(data) {
+      console.log('response..', data);
+      $location.path('roomlist');
+    })
+    .error(function (e) {
+      console.log('error..', e);
+    });
+  }
+
+}]);
+
+app.controller('updateRoomCtrl',['$http', 'authentication', '$location', function($http, authentication, $location) {
+  console.log("add rooms controller is running...");
+  var vm = this
+  var room = JSON.parse(sessionStorage.room);
+  vm.room = {
+    name: room.name,
+    type:  room.type,
+    booked: room.booked,
+    guests: room.guests,
+    beds: room.beds
+  }
+  
+  vm.onSubmit = function () {
+    console.log('Submitting new form');
+    $http.post('/api/admin/rooms/update', vm.room).success(function(data) {
       console.log('response..', data);
       $location.path('roomlist');
     })

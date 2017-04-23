@@ -3,6 +3,7 @@
 
 	<div class="row">
 
+		<a href="login">Logout</a>
 		<h2>Rooms Availability</h2> 
 		<h4><button>View Favorites</button></h4>
 
@@ -24,7 +25,7 @@
 				<td ng-bind='room.beds'></td>
 				<td ng-bind='room.booked'></td>
 				<td><button>Favs</button></td>
-				<td><button>Book</button></td>
+				<td><button ng-click="vm.book(room)">Book</button></td>
 			</tr>
 		</table>
 		<div class="Button" align="center">

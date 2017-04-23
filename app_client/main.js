@@ -39,6 +39,11 @@
       controller: 'roomlistCtrl',
       controllerAs: 'vm'
     })
+    .when('/update', {
+      templateUrl: '/admin/update.view.html',
+      controller: 'updateRoomCtrl',
+      controllerAs: 'vm'
+    })
     .otherwise({redirectTo: '/'});
 
     // use the HTML5 History API

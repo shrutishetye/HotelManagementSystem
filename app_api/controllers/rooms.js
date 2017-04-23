@@ -30,17 +30,22 @@ module.exports.add = function(req, res) {
 };
 
 module.exports.update = function(req, res) {
-
+console.log(req.body)
   var room = new Room();
   room.type = req.body.type;
   room.booked = req.body.booked;
   room.guests = req.body.guests;
   room.beds = req.body.beds;
 
-  Room.update({ name: req.body.name }, { $set: { type: req.body.type, 
-    booked: req.body.booked, guests: req.body.guests, bed: req.body.beds }}, function(err){
-      if(!err)res.status(200);
-    });
+  Room.findOne({ name: req.body.name }, function(err,doc){  
+    doc.type= req.body.type, 
+    doc.booked= req.body.booked, 
+    doc.guests= req.body.guests, 
+    doc.beds= req.body.beds 
+    doc.save(function(err, room) {
+    if (!err)res.status(200).json(room);
+  });
+  });
 };
 
 module.exports.delete = function(req, res) {
