@@ -19,7 +19,7 @@
       authentication
         .register(vm.credentials)
         .error(function(err){
-          alert(err);
+          alert("User already exists");
         })
         .then(function(){
           $location.path('profile');
