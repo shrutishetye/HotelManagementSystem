@@ -1,8 +1,8 @@
-
+<navigation></navigation>
 <div class="container">
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6" style="background-color: white;border-radius: 25px;border: 2px solid #73AD21; padding: 20px">
       <h1>Add a new room</h1>
       <form ng-submit="vm.onSubmit()">
         <div class="form-group">
@@ -14,7 +14,7 @@
           <input type="text" class="form-control" id="type" placeholder="Enter Type" ng-model="vm.room.type">
         </div>
         <div class="form-group">
-        <label for="booked">Booked</label>
+          <label for="booked">Booked</label>
           <input type="text" class="form-control" id="booked" placeholder="Enter Yes/No" ng-model="vm.room.booked">
         </div>
         <div class="form-group">
@@ -25,6 +25,14 @@
           <label for="type">Guests Allowed</label>
           <input type="text" class="form-control" id="guests" placeholder="Enter guests Allowed" ng-model="vm.room.guests">
         </div>
+        <div class="form-group">
+          <label for="type">Cost</label>
+          <input type="text" class="form-control" id="cost" placeholder="Cost" ng-model="vm.room.cost">
+        </div>
+        <div class="form-group">
+          <label for="type">City</label>
+          <input type="text" class="form-control" id="city" placeholder="City" ng-model="vm.room.city">
+        </div>
 
         <button type="submit" class="btn btn-default">Add</button>
       </form>
@@ -32,3 +40,11 @@
   </div>
 
 </div>
+<style type="text/css">
+  body {
+    background:#edf1f4 url('img/add.jpg');
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+    font-size:16px;
+    color:#444;
+  }
+</style>

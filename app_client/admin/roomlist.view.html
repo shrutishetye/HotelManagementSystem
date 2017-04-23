@@ -1,6 +1,9 @@
+<navigation></navigation>
+
+
 <div class="container">
 
-	<div class="row">
+	<div class="row" style="background-color: white;border-radius: 25px;border: 2px solid #73AD21;padding: 20px; ">
 		<a href="login">Logout</a>
 		<h2>Admin Portal</h2> 
 
@@ -12,8 +15,10 @@
 				<th>Guests Allowed</th>
 				<th>No of Beds</th>
 				<th>Booked</th>
-				<th>Add to Favourites</th>
-				<th>Make a booking</th>
+				<th>Cost</th>
+				<th>City</th>
+				<th>Delete</th>
+				<th>Edit</th>
 			</tr>
 			<tr ng-repeat='room in vm.rooms'>
 				<td ng-bind='room.name'></td>
@@ -21,6 +26,8 @@
 				<td ng-bind='room.guests'></td>
 				<td ng-bind='room.beds'></td>
 				<td ng-bind='room.booked'></td>
+				<td ng-bind='room.cost'></td>
+				<td ng-bind='room.city'></td>
 				<td><button ng-click="vm.delete(room)">Delete</button></td>
 				<td><button ng-click="vm.store(room)">Edit</button></td>
 			</tr>
@@ -28,3 +35,11 @@
 	</div>
 
 </div>
+<style type="text/css">
+  body {
+    background:#edf1f4 url('img/list.jpg');
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+    font-size:16px;
+    color:#444;
+  }
+</style>

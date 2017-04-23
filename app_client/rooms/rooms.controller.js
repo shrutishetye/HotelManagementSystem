@@ -18,20 +18,22 @@ function roomsCtrl($http, authentication, $location) {
     vm.room = {
       name: room.name,
       type:  room.type,
-      booked: 'Yes',
+      booked: true,
       guests: room.guests,
-      beds: room.beds
+      beds: room.beds,
+      cost: room.cost,
+      city: room.city
     }
     $http.post('/api/admin/rooms/update', vm.room).success(function(data) {
       alert("booked successfully");
-      $location.path('rooms')
+      window.location.reload(true);
     })
     .error(function (e) {
       console.log('error..', e);
     });
   }
 
-  $http.get('/api/rooms', {
+  $http.get('/api/availability', {
     headers: {
       Authorization: 'Bearer '+ authentication.getToken()
     }

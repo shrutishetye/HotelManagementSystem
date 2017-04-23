@@ -13,7 +13,10 @@ var ctrlRooms = require('../controllers/rooms');
 // profile
 router.get('/profile', auth, ctrlProfile.profileRead);
 
-// rooms
+//rooms
+router.get('/availability', auth, ctrlRooms.available);
+
+// admin
 router.get('/rooms', auth, ctrlRooms.all);
 router.post('/admin/rooms/add', ctrlRooms.add);
 router.post('/admin/rooms/update', ctrlRooms.update);

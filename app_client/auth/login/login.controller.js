@@ -23,6 +23,7 @@
         if(cUser.email == 'admin@staytoday.com'){
           $location.path('roomlist');
         }else{
+          sessionStorage['user'] = JSON.stringify(cUser)
           $location.path('rooms');
         }
       });

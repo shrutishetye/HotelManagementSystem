@@ -22,15 +22,14 @@ app.controller('roomlistCtrl',['$http', 'authentication', '$location', function(
   }
 
   vm.store = function(room){
-    console.log(room)
     sessionStorage['room'] = JSON.stringify(room)
-     $location.path('update');
+    $location.path('update');
   }
 
   vm.delete = function(r){
     $http.post('/api/admin/rooms/delete', {name: r.name}).success(function(data) {
       console.log('response..', data);
-      $location.path('roomlist');
+      window.location.reload(true);
     })
     .error(function (e) {
       console.log('error..', e);
@@ -48,7 +47,9 @@ app.controller('addRoomCtrl',['$http', 'authentication', '$location', function($
     type:  '',
     booked: '',
     guests: '',
-    beds: ''
+    beds: '',
+    cost: '',
+    city: ''
   }
   
   vm.onSubmit = function () {
@@ -65,7 +66,7 @@ app.controller('addRoomCtrl',['$http', 'authentication', '$location', function($
 }]);
 
 app.controller('updateRoomCtrl',['$http', 'authentication', '$location', function($http, authentication, $location) {
-  console.log("add rooms controller is running...");
+  console.log("update rooms controller is running...");
   var vm = this
   var room = JSON.parse(sessionStorage.room);
   vm.room = {
@@ -73,7 +74,9 @@ app.controller('updateRoomCtrl',['$http', 'authentication', '$location', functio
     type:  room.type,
     booked: room.booked,
     guests: room.guests,
-    beds: room.beds
+    beds: room.beds,
+    cost: room.cost,
+    city: room.city
   }
   
   vm.onSubmit = function () {

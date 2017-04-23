@@ -21,9 +21,21 @@ var roomSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  booked: {
+  city:{
     type: String,
     required: true
+  },
+  booked: {
+    type: Boolean,
+    required: true
+  },
+  cost: {
+    type: Number,
+    required: true
+  },
+  img: {
+    type: String,
+    required: false
   },
   
 });
