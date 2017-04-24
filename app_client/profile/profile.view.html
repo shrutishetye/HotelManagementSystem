@@ -1,43 +1,38 @@
 <navigation></navigation>
-<div class="container">
-  <div class="row">
+<div class="container" style="background-color: white;border-radius: 25px;border: 2px solid #73AD21;padding: 20px; ">
+<div class="row">
+   <div class="col-md-6">
+    <h4><a href="login">Logout</a> 
+      <h1 class="form-signin-heading">Your profile</h1>
 
-   <div class="col-md-6" style="background-color: white;border-radius: 25px;border: 2px solid #73AD21;padding: 20px; ">
-
-    <h1 class="form-signin-heading">Your profile</h1>
-
-    <form  class="form-horizontal">
-      <div class="form-group">
-        <label class="col-sm-3 control-label">Full name</label>
-        <p class="form-control-static">{{ vm.user.name }}</p>
-      </div>
-      <div class="form-group">
-        <label class="col-sm-3 control-label">Email</label>
-        <p class="form-control-static">{{ vm.user.email }}</p>
-      </div>
-      <p><h4><a href="rooms">Find an Abode</a></h4></p>
-
-      <p><h4>Your Bookings</h4></p>      
-      <table class='table table-striped'>
-        <tr>
-          <th>Unit Name</th>
-          <th>Date</th>
-          <th>Status</th>
-        </tr>
-        <tr ng-repeat='booking in vm.bookings'>
-          <td ng-bind='booking.room'></td>
-          <td ng-bind='booking.bookDate'></td>
-          <td>Expired</td>
-        </tr>
-      </table>
-
-
-      <p><h4><a href="login">Logout</a></p></h4>
-    </form>
-
+      <form  class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Full name</label>
+          <p class="form-control-static">{{ vm.user.name }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Email</label>
+          <p class="form-control-static">{{ vm.user.email }}</p>
+        </div>
+      </form>
+    </div>
   </div>
+  <p><h4>Your Bookings</h4></p>      
+  <table class='table table-striped'>
+    <tr>
+      <th>Unit Name</th>
+      <th>Date</th>
+      <th>Status</th>
+    </tr>
+    <tr ng-repeat='booking in vm.bookings'>
+      <td ng-bind='booking.room'></td>
+      <td ng-bind='booking.bookDate'></td>
+      <td ng-bind='booking.status'></td>
+    </tr>
+  </table>
 
-</div>
+
+  <p><a href="rooms"><h4>Find an Abode</a></h4></p>
 </div>
 <style type="text/css">
   body {

@@ -21,12 +21,29 @@
       console.log(e);
     });
 
-     var cUser = JSON.parse(sessionStorage.user);
+    var cUser = JSON.parse(sessionStorage.user);
 
     $http.post('/api/bookings', { email: cUser.email }).success(function(data) {
-      console.log('response bookings', data);
-      vm.bookings = data;
-    })
+     console.log('response bookings', data);
+     // vm.bookings = data;
+     for(var i in data){
+      var d = new Date();
+      var f = new Date(data[i].bookDate)
+      var day1 = d.getDate();
+      var mon1 = d.getMonth();
+      var year1 = d.getFullYear();
+      var day2 = f.getDate();
+      var mon2 = f.getMonth();
+      var year2 = f.getFullYear();
+      if (day1 == day2 && mon1 == mon2 && year1 == year2){
+        data[i].status = "Current";
+      } else {
+        data[i].status = "Expired";
+      }
+      data[i].bookDate = data[i].bookDate.split('T')[0]; 
+      vm.bookings.push(data[i]);
+    }
+  })
     .error(function (e) {
       console.log(e);
     });
