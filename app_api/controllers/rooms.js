@@ -42,7 +42,7 @@ module.exports.add = function(req, res) {
   room.beds = req.body.beds;
   room.cost = req.body.cost;
   room.city = req.body.city;
-  room.img = 'icon.jpg';
+  room.img = req.body.img;
   room.save(function(err, room) {
     if (!err)res.status(200).json(room);
   });
@@ -57,13 +57,16 @@ console.log(req.body)
   room.beds = req.body.beds;
   room.cost = req.body.cost;
   room.city = req.body.city;
-  room.img = 'icon.jpg';
+  room.img = req.body.img;
 
   Room.findOne({ name: req.body.name }, function(err,doc){  
     doc.type= req.body.type, 
     doc.booked= req.body.booked, 
     doc.guests= req.body.guests, 
-    doc.beds= req.body.beds 
+    doc.beds= req.body.beds,
+    doc.cost = req.body.cost;
+    doc.city = req.body.city;
+    doc.img = req.body.img;
     doc.save(function(err, room) {
     if (!err)res.status(200).json(room);
   });

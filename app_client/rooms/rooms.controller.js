@@ -28,7 +28,7 @@ function roomsCtrl($http, authentication, $location) {
     $http.post('/api/admin/rooms/update', vm.room).success(function(data) {
       var broom = {email: cUser.email, room: vm.room.name}
       $http.post('/api/addbooking', broom).success(function(d) {
-        alert("Payment successfull. Booking ID: 78926AS56");
+        alert("Payment successful. Booking ID: 78926AS56");
         $location.path('profile');
       })
       .error(function (e) {

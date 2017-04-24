@@ -22,7 +22,7 @@
 
 			</tr>
 			<tr ng-repeat='room in vm.rooms | startFrom:vm.currentPage*vm.pageSize | limitTo:vm.pageSize | filter: filter_name'>
-				<td><img src="img/icon.jpg" width="90px" height="70px"></td>
+				<td><img ng-src='img/{{room.img}}' width="90px" height="70px"></td>
 				<td ng-bind='room.name'></td>
 				<td ng-bind='room.type'></td>
 				<td ng-bind='room.guests'></td>

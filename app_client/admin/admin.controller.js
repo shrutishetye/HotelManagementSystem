@@ -49,7 +49,8 @@ app.controller('addRoomCtrl',['$http', 'authentication', '$location', function($
     guests: '',
     beds: '',
     cost: '',
-    city: ''
+    city: '',
+    img: ''
   }
   
   vm.onSubmit = function () {
@@ -76,7 +77,8 @@ app.controller('updateRoomCtrl',['$http', 'authentication', '$location', functio
     guests: room.guests,
     beds: room.beds,
     cost: room.cost,
-    city: room.city
+    city: room.city,
+    img: room.img
   }
   
   vm.onSubmit = function () {

@@ -7,8 +7,8 @@ module.exports.addbooking = function(req, res) {
   var booking = new BookingHistory();
   booking.email = req.body.email;
   booking.room = req.body.room;
-  booking.id = new Date().now();
-  booking.bookDate = new Date().now();
+  booking.id = new Date().getTime();
+  booking.bookDate = new Date().getTime();
   booking.save(function(err, record) {
     console.log('in add', err, booking);
     if (!err)res.status(200).json(record);

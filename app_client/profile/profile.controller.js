@@ -12,6 +12,12 @@
     vm.user = {};
     vm.bookings = [];
 
+    vm.logout = function(){
+      sessionStorage.removeItem('user');
+      sessionStorage.removeItem('room');
+      $location.path('login');
+    }
+
     meanData.getProfile()
     .success(function(data) {
       console.log("profile controller is running...");
@@ -35,7 +41,8 @@
       var day2 = f.getDate();
       var mon2 = f.getMonth();
       var year2 = f.getFullYear();
-      if (day1 == day2 && mon1 == mon2 && year1 == year2){
+      console.log(day1, day2)
+      if (day1 === day2 && mon1 === mon2 && year1 === year2){
         data[i].status = "Current";
       } else {
         data[i].status = "Expired";

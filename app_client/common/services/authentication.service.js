@@ -47,6 +47,7 @@
 
     register = function(user) {
       return $http.post('/api/register', user).success(function(data){
+        sessionStorage['user'] = JSON.stringify(user)
         saveToken(data.token);
       });
     };

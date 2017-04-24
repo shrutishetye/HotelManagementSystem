@@ -17,8 +17,9 @@
       authentication.login(vm.credentials)
       .error(function(err){
         console.log(err);
+        alert('Login Unsuccessful');
       }).then(function(){
-        console.log('login sucessfull')
+        console.log('login successful')
         var cUser = authentication.currentUser()
         if(cUser.email == 'admin@staytoday.com'){
           $location.path('roomlist');
